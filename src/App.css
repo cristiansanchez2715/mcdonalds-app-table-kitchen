@@ -1,0 +1,265 @@
+.App {
+  text-align: center;
+}
+
+/* FRONTEND CLEINTE */
+
+.client-container{
+  display: flex;
+  flex-direction: row;
+}
+
+
+/* hamburguesas */
+
+.container-hamburguesas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Crea tres columnas de igual tamaño */
+  grid-gap: 5px; /* Espaciado entre las celdas de la grilla */
+  width: 40vw;
+  margin-left: 0;
+  margin-top: 100px;
+}
+
+.card-food {
+  width: 200px; /* Ajusta el ancho según tus necesidades */
+  margin-bottom: 20px; /* Ajusta el espaciado entre las tarjetas */
+  border: 1px solid #ccc; /* Agrega un borde opcional */
+  padding: 10px; /* Ajusta el espacio interno de la tarjeta */
+  height: 500px;
+}
+
+.img-food{
+  width: 150px;
+  margin-left: calc(50% - 75px);
+  height: 150px;
+}
+
+
+
+
+/* CARBUY */
+
+
+.container-carbuy {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #f9f9f9;
+  width: 40vw;
+  position: absolute;
+  top: 0%;
+  left: 55%;
+  overflow-y: auto;
+}
+
+.container-carbuy > div {
+  margin-bottom: 10px;
+}
+
+.totalPaiContainer {
+  margin-top: 20px;
+  text-align: right;
+  height: auto;
+}
+
+.img-carbuy {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-top: 10px;
+}
+
+h1, h2, h3 {
+  margin: 5px 0;
+  font-weight: normal;
+}
+
+
+button{
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+.primary-button {
+  background-color: #ffcc00; /* Amarillo McDonald's */
+  color: #d21f17; /* Rojo McDonald's */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombreado */
+}
+
+/* Estilo para botón secundario */
+.secondary-button {
+  background-color: #d21f17; /* Rojo McDonald's */
+  color: #fff; /* Blanco */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombreado */
+}
+
+button:hover{
+  opacity: 0.9; /* Reducir opacidad al pasar el ratón */
+  transform: translateY(-1px); 
+}
+
+.logo-macdonalds{
+width: 75px;
+height: 75px;
+}
+
+.container-logo{
+  position: absolute;
+  left: 25%;
+  top: 1%;
+}
+
+
+/* buttons tables */
+
+.container-buttons{
+  display: flex;
+  flex-direction: row;
+  width: 50vw;
+  position: absolute;
+}
+
+.table-button{
+  background-color: #d21f17; /* Rojo McDonald's */
+  color: #fff; /* Blanco */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+  width: 75px;
+  height: 50px;
+}
+
+.table-button:disabled{
+  background-color: #111;
+}
+
+.container-btn-challange{
+  position: absolute;
+  left: 60%;
+  top: -100px;
+}
+
+
+.order-sucessfull{
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  margin-top: 80%;
+  /* position: absolute;
+  left: 100px;
+  top: 80%; */
+   
+}
+
+.ordersucess-h1{
+  /* margin-top: 100px; */
+
+}
+
+.information-user {
+  background-color: #f2f2f2; /* Color de fondo similar al de McDonald's */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  text-align: center; /* Alineación centrada del texto */
+  font-family: Arial, sans-serif; /* Fuente similar a la usada por McDonald's */
+}
+
+.information-user h1 {
+  color: #d91e2c; /* Color de texto rojo similar al de McDonald's */
+  font-size: 24px; /* Tamaño de fuente */
+}
+
+
+.container-tables{
+  position: absolute;
+  top: 25%;
+  left: 5%;
+}
+
+.container-buttons-barnav{
+  position: absolute;
+  left: 5%;
+}
+
+
+/* ERROR COMPONENT  */
+
+.error-container {
+  text-align: center;
+  background-color: #d21f17;
+  color: white;
+  height: 100vh;
+}
+
+.error-text {
+  font-size: 75px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+  /* background-image: url('./asses/not-found/logo-removebg-preview.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 80vw;
+  margin-left: calc(50% - 40vw); */
+}
+
+.error-image {
+  width: 300px;
+  height: auto;
+}
+
+
+.admin-carbuy{
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #f9f9f9;
+  width: 40vw;
+  margin-left: 5%;
+  /* position: absolute; */
+  top: 0%;
+  /* left: 5%; */
+  overflow-y: auto;
+}
+
+.container-admin{
+  display: flex;
+  flex-direction: row;
+  margin-left: 5%;
+}
+
+
+.container-bdimpresion{
+width: 40vw;
+margin-left: 5%;
+border: #111 solid 1px;
+height: 10vh;
+margin-top: 20%;
+}
+
+.error-container{
+  background-color: red;
+  color: white;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.container-logo-macdonalds-admin{
+  position: absolute;
+  left: 25%;
+  top: 5%;
+}
+.img-logo-macdonalds-admin{
+width: 150px;
+height: 150px;
+}
+
+/* FRONTEND ADMINISTRADOR- */
